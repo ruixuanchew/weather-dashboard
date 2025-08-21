@@ -34,11 +34,11 @@ npm install
 3. Create .env file in root and add your OpenWeather API Key:
 
     You can get your OpenWeather API Key from this link: https://openweathermap.org/api
-    
+
     If you do not want to get an OpenWeather API Key, there is a dummy data option as well! Dummy data are hardcoded for you to be able to see the design. 
 
 ```bash
-VITE_WEATHER_API_KEY=13fa9e11612031a81db92baa1582f968
+VITE_WEATHER_API_KEY=REPLACE_WITH_API_KEY
 ```
 
 
