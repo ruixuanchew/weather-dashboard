@@ -1,12 +1,57 @@
-# React + Vite
+# 🌤 Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive weather dashboard built with **React**, providing current weather, 5-day forecast, air pollution data, and UV index for any city worldwide.
 
-Currently, two official plugins are available:
+## 📑 Table of Contents
+- [🚀 Features](#-features)
+- [⚙️ Installation](#-installation)
+- [🛠️ Technologies Used](#️-technologies-used)
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔎 Search for **current weather** in any city.
+- 📅 View **5-day forecast** with daily min/max temperatures and weather icons.
+- 🌬 Check **air pollution levels** and **UV index**.
+- 📱 Fully responsive for **mobile and desktop**.
+- ✨ Interactive dashboard with cards and carousels.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ruixuanchew/weather-dashboard.git
+```
+
+2. Install Dependencies:
+```bash
+npm install
+```
+
+3. Create .env file in root and add your OpenWeather API Key:
+
+    You can get your OpenWeather API Key from this link: https://openweathermap.org/api
+    
+    If you do not want to get an OpenWeather API Key, there is a dummy data option as well! Dummy data are hardcoded for you to be able to see the design. 
+
+```bash
+VITE_WEATHER_API_KEY=13fa9e11612031a81db92baa1582f968
+```
+
+
+4. Run the code!
+```bash
+npm run dev
+```
+
+---
+
+## 🛠️ Technologies Used
+- React - Frontend Framework
+- CSS - Styling and Design
+- OpenWeather API - Weather & Forecase Data
+- Vite - Fast Development Environment Set up
+
