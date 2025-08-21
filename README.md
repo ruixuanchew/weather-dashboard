@@ -6,7 +6,7 @@ A sleek and responsive weather dashboard built with **React**, providing current
 - [🚀 Features](#-features)
 - [⚙️ Installation](#-installation)
 - [🛠️ Technologies Used](#️-technologies-used)
----
+
 
 ## 🚀 Features
 
@@ -16,7 +16,6 @@ A sleek and responsive weather dashboard built with **React**, providing current
 - 📱 Fully responsive for **mobile and desktop**.
 - ✨ Interactive dashboard with cards and carousels.
 
----
 
 ## ⚙️ Installation
 
@@ -47,7 +46,6 @@ VITE_WEATHER_API_KEY=REPLACE_WITH_API_KEY
 npm run dev
 ```
 
----
 
 ## 🛠️ Technologies Used
 - React - Frontend Framework
