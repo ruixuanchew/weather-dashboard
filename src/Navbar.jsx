@@ -7,14 +7,14 @@ function Navbar() {
   return (
     <nav className="navbar">
       <h1 className="logo">WeatherApp</h1>
-      <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+      {/* <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
         ☰
-      </button>
-      <div className={`nav-links ${isOpen ? "open" : ""}`}>
-        <a href="#">Home</a>
+      </button> */}
+      {/* <div className={`nav-links ${isOpen ? "open" : ""}`}>
+        <a href="#">Settings</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-      </div>
+      </div> */}
     </nav>
   );
 }

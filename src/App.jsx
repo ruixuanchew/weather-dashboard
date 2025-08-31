@@ -10,8 +10,10 @@ import AirPollutionCard from "./cards/AirPollutionCard";
 import UVIndexCard from "./cards/UVIndexCard";
 
 function App() {
+  // States 
   const [useDummy, setUseDummy] = useState(false);
   const [city, setCity] = useState("");
+  // To set the current card shown to users in the card carousel
   const [currentCard, setCurrentCard] = useState(0);
 
   const { weather, forecast, pollution, uv, loadWeather } = setWeather();
@@ -24,6 +26,7 @@ function App() {
     }
   }, [useDummy]);
 
+  // Initialise the Cards from cards folder
   const cards = [
     <WeatherCard key="weather" weather={weather} />,
     <Forecast5DayCard key="forecast5day" forecast={forecast} />,
@@ -31,6 +34,7 @@ function App() {
     <UVIndexCard key="uv" uv={uv} />
   ];
 
+  // Initialise Card Titles For Top of Card Carousel
   const cardTitles = [
     "Current Forecast",
     "5-Day Forecast",
@@ -40,6 +44,7 @@ function App() {
 
   return (
     <div>
+      {/* Mount Navbar at top of page */}
       <Navbar />
       <section
         className="background-section"
@@ -47,6 +52,7 @@ function App() {
       >
         <h1 id="heading-text">Welcome to My Weather Dashboard</h1>
         <hr className="heading-divider" />
+        {/* Search Container Section Includes Inputs and Buttons */}
         <div className="search-container">
           <input
             type="text"
@@ -58,6 +64,7 @@ function App() {
           />
           <button onClick={() => loadWeather(city, useDummy)} disabled={useDummy}>Get Weather</button>
         </div>
+        {/* Use dummy data for preview of design */}
         <div className="toggle-container">
           <label className="dummy-checkbox-label">
             <input
@@ -70,6 +77,7 @@ function App() {
         </div>
       </section>
 
+      {/* Main Card Carousel Section */}
       <div className="app-container">
         <div className="forecast-section">
           <h1 className="section-title">{cardTitles[currentCard]}</h1>

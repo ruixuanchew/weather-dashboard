@@ -1,6 +1,9 @@
+// Air Pollution Card
 function AirPollutionCard({ pollution }) {
+  // Display message if empty
   if (!pollution || !pollution.list) return <div className="card">Please enter a city above.</div>;
-
+  
+  // Define AQI levels corresponding to numeric values (1 to 5)
   const aqiLevels = ["Good", "Fair", "Moderate", "Poor", "Very Poor"];
   const data = pollution.list[0];
 

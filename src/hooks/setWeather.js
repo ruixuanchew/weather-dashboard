@@ -8,9 +8,16 @@ import {
 import { dummyWeather, dummyForecast, dummyPollution, dummyUv } from "../data/dummydata";
 
 export function setWeather() {
+  // State for current weather data
   const [weather, setWeather] = useState(null);
+
+  // State for 5-day forecast data
   const [forecast, setForecast] = useState(null);
+
+  // State for air pollution data
   const [pollution, setPollution] = useState(null);
+  
+  // State for UV index data
   const [uv, setUv] = useState(null);
 
   async function loadWeather(city, useDummy = false) {
@@ -23,6 +30,7 @@ export function setWeather() {
     return;
   }
   
+  // If no city is provided, clear all state
   if (!city) {
     setWeather(null);
     setForecast(null);

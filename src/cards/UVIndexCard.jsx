@@ -1,8 +1,11 @@
 function UVIndexCard({ uv }) {
+  // Display message if empty
   if (!uv || !uv.value) return <div className="card">Please enter a city above.</div>;
 
   const uvValue = uv.value;
   let uvCategory = "";
+  
+  // Determine the UV index category based on the value
   if (uvValue < 3) uvCategory = "Low";
   else if (uvValue < 6) uvCategory = "Moderate";
   else if (uvValue < 8) uvCategory = "High";

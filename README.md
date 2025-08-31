@@ -53,3 +53,5 @@ npm run dev
 - OpenWeather API - Weather & Forecase Data
 - Vite - Fast Development Environment Set up
 
+## 📽️ Video Demonstration
+[![Watch the demo](./screenshots/thumbnail.png)](https://youtu.be/jpP74tzvkok?si=-ClbewtzvSy1jF9k)

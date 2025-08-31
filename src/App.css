@@ -1,4 +1,3 @@
-
 .background-section {
     position: relative;
     background-size: cover;
@@ -53,20 +52,21 @@ button:disabled:hover{
   cursor: not-allowed;    
   opacity: 0.6;           
 }
+
 /* Button styling */
 button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 4px;
-  background-color: var(--primary); /* example color */
+  background-color: var(--primary); 
   color: white;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
 button:hover {
-  background-color: #291809; /* slightly darker on hover */
+  background-color: #291809; 
 }
 
 /* Weather info box */
@@ -83,18 +83,18 @@ button:hover {
 /* Dashboard grid */
 .dashboard {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-auto-rows: 1fr; /* equal height rows */
-  gap: 1rem; /* small gap for tightly packed look */
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 1rem; 
   margin-top: 2rem;
   color: white;
 }
 .scrollable-dashboard {
   display: flex;
-  gap: 1rem;              /* space between cards */
-  overflow-x: auto;        /* horizontal scroll */
-  scroll-snap-type: x mandatory; /* enable horizontal snap */
-  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+  gap: 1rem;             
+  overflow-x: auto;       
+  scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch; 
   padding-bottom: 1rem;
 }
 .carousel-container {
@@ -106,10 +106,10 @@ button:hover {
 }
 
 .carousel-card {
-  max-width: 90vw;        /* responsive */
-  min-height: 350px;      /* optional, keep card large */
+  max-width: 90vw;        
+  min-height: 350px;   
   display: flex;
-  justify-content: center; /* center content inside card */
+  justify-content: center;
   align-items: center;
 }
 
@@ -127,7 +127,6 @@ button:hover {
 .carousel-btn:hover {
   background-color: #291809; 
 }
-
 
 /* Card style */
 .card {
@@ -151,12 +150,12 @@ button:hover {
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 .forecast-section {
-  text-align: center; /* centers the title */
+  text-align: center;
 }
 
 .forecast-section .section-title {
-  margin-bottom: 1.5rem; /* space between title and cards */
-  font-size: 2rem;       /* make the heading bigger */
+  margin-bottom: 1.5rem;
+  font-size: 2rem;     
   color: white;
 }
 
@@ -171,9 +170,9 @@ button:hover {
 .forecast-5day-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 1rem; /* spacing between forecast days */
+  gap: 1rem; 
   width: 100%;
-  justify-items: center; /* center content inside each cell */
+  justify-items: center;
 }
 
 .forecast-day {
@@ -187,13 +186,13 @@ button:hover {
 
 @media (max-width: 768px) {
   .forecast-5day-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .forecast-5day-container {
-    grid-template-columns: 1fr; /* 1 column on mobile */
+    grid-template-columns: 1fr;
   }
 }
 
